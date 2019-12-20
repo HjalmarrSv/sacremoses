@@ -453,9 +453,9 @@ class MosesDetruecaser(object):
             "&#93;",
         }
 
-        # Some predefined words that will always be in lowercase.
-        self.ALWAYS_LOWER = {
-            "a",
+        # Some predefined words that will always be in lowercase. 191120 Add switch for en or remove.
+        self.ALWAYS_LOWER = {}
+         """           "a",
             "after",
             "against",
             "al-.+",
@@ -491,7 +491,7 @@ class MosesDetruecaser(object):
             "will",
             "with",
         }
-
+        """
     def detruecase(self, text, is_headline=False, return_str=False):
         """
         Detruecase the translated files from a model that learnt from truecased
